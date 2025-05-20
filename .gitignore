@@ -1,32 +1,12 @@
-# 1. 환경 변수 파일
 .env
 
-# 2. 파이썬이 생성하는 캐시 폴더 및 파일
 __pycache__/
 *.pyc
 
-# 3. IDE (IntelliJ, PyCharm 등) 관련 설정 폴더
 .idea/
 
-# 4. 임시 파일
-~$*.docx # Word 문서 임시 파일들 (예: ~$tax_markdown-index.docx)
+~$*.docx
 
-# 5. Streamlit 관련 캐시 및 설정 (로컬 개발 환경 관련)
 .streamlit/
 
-# 6. 가상 환경 폴더 (만약 프로젝트 폴더 안에 가상 환경이 있다면)
-# 현재 터미널 로그를 보면 가상 환경이 /opt/anaconda3/envs/langchain-env/ 에 있어서
-# 프로젝트 폴더 안에 직접적으로 가상 환경 폴더가 있는 건 아닐 수 있습니다.
-# 하지만 혹시 모르니 일반적으로 많이 추가합니다.
-# venv/
-# .venv/
-# env/
-# langchain-env/ # 만약 프로젝트 루트에 이런 이름의 폴더가 있다면 추가
-
-# 7. 운영체제에서 자동으로 생성하는 파일 (macOS)
 .DS_Store
-
-# 8. 데이터베이스 파일 (Chroma DB를 로컬에 저장했다면)
-# 만약 ChromaDB를 로컬 파일로 사용하고 있다면 해당 경로를 추가해야 합니다.
-# persist_directory="./chroma" 로 설정했다면
-# chroma/
